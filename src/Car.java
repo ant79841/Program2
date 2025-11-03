@@ -37,8 +37,8 @@ abstract public class Car {
     abstract public void move(Racetrack track);
     /** Display stats for car */
     public void DisplayCarInfo(int place) {
-        System.out.print( "Place: " + place + " Car ID: " + idNumber + "
-                Coordinates: " + row + "," + col);
+        System.out.print( "Place: " + place + " Car ID: " + idNumber +
+                " Coordinates: " + row + "," + col);
         System.out.println( " Max Speed: " + maxSpeed + " Velocity: " + rowVelocity
                 + "," + colVelocity + " Order: " + moveOrder);
     }
@@ -69,7 +69,7 @@ abstract public class Car {
         this.updateVelocity(this.getRowVelocity() +
                 rowVelocity,this.getColVelocity() + colVelocity);
         this.setCarMove(track);
-// Pause race after each move
+        // Pause race after each move
         System.out.print("Press any key and enter to continue: ");
         new Scanner(System.in).next();
     }

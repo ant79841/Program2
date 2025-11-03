@@ -3,15 +3,16 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Usage: run Program2, follow prompts (Car.updateCarInfo pauses after each move).
+ *  runner class for Program2.
+ * Run Program2.main() to start a race.
  */
 public class Program2 {
 
     public static void main(String[] args) {
-        // Create racetrack (example size)
+        // Create racetrack (example size: 11 rows x 15 cols)
         Racetrack track = new Racetrack(11, 15);
 
-        // Create three cars (order matters: they move in the order they are created)
+        // Create three cars (their move order is the order of construction)
         GridCar car1 = new GridCar('1');
         GridCar car2 = new GridCar('2');
         GridCar car3 = new GridCar('3');
@@ -43,7 +44,7 @@ public class Program2 {
         cars.add(car3);
 
         while (!someoneWon) {
-            // move each car in their moveOrder (they were constructed in order )
+            // move each car in their creation order
             for (GridCar c : cars) {
                 System.out.println("*****CAR " + c.getIdNumber() + "'s TURN!*****");
                 c.move(track);
