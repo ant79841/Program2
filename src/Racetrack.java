@@ -4,6 +4,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
+ *
  * - weight = Manhattan distance to finish (smaller = closer to finish)
  * - map holds characters: 'X' border, 'F' finish, ' ' empty, 'T' trail, or car id.
  */
