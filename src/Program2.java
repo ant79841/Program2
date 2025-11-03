@@ -5,6 +5,8 @@ import java.util.List;
 /**
  *  runner class for Program2.
  * Run Program2.main() to start a race.
+ *
+ *
  */
 public class Program2 {
 
